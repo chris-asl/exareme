@@ -19,7 +19,7 @@ public class MaterializedWriter extends AbstractSiNo {
 
     private static Logger log = Logger.getLogger(MaterializedWriter.class);
 
-    @Override public void run() throws Exception {
+    @Override public void run(String opname) throws Exception {
         ObjectInputStream inStream = null;
         File tableFile = null;
         String inputFileName = null;
